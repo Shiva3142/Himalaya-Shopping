@@ -1,0 +1,100 @@
+.homeimg{
+    width: 100%;
+    mask-image:linear-gradient(to bottom,rgba(0, 0, 0, 1),rgba(0,0,0,0.15)) ; 
+    z-index: -1;
+    margin-bottom: -200px;
+    display: flex;
+}
+.homeimg img{
+    width: 100%;
+}
+.homeproductCollection{
+    z-index: 10;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.homeheading{
+    text-align: center;
+    font-size: 20px;
+    background-color: rgb(187, 187, 187);
+}
+
+.homeproducts{
+    z-index: 1;
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr) );
+}
+
+.dealersimg{
+    border: 1px solid rgba(0, 0, 0, 0.493);
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+.dealerimg{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    align-items: center;
+    justify-content: center;
+}
+.dealerimg img{
+    margin: auto;
+    width: 300px;
+}
+.dealersheading{
+    margin: 10px;
+    font-size: 30px;
+    text-align: center;
+
+}
+
+@media(max-width:768px)
+{
+    .homeproductCollection{
+        width: 98%;
+    }
+    .homeimg{
+        margin-bottom: -50px;
+    }
+    .homeheading{
+        font-size: 8px;
+    }
+    .homeproducts{
+        grid-template-columns: 1fr;
+    }
+    .dealersheading{
+        font-size: 10px;
+    
+    }
+    .dealersimg{
+        border: 1px solid rgba(0, 0, 0, 0.493);
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+    .dealerimg{
+        grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+    }
+    .dealerimg img{
+        width: 100px;
+    }
+    .dealersheading{
+        margin: 10px;
+        font-size: 10px;
+        text-align: center;
+    
+    }
+}

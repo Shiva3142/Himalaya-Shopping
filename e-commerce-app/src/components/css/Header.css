@@ -1,0 +1,168 @@
+.header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10px;
+    font-size: 18px;
+}
+.header>i{
+    position: absolute;
+    display: none;
+    color: #fff;
+    font-size: 40px;
+}
+.heading{
+    margin-left: 50px;
+    width: 450px;
+}
+.searchdiv {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    border: 5px solid coral;
+    border-radius: 5px;
+}
+.searchdiv>input {
+    width: 100%;
+    font-size: 20px;
+    padding: 5px 10px;
+    border: none;
+}
+
+.searchdiv >button{
+    padding: 5px 15px;
+    font-size: 30px;
+    border: none;
+    background-color: coral;
+}
+
+.headerNav {
+    width: 350px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 23px;
+    padding: 0px;
+}
+.headerNav li{
+    padding: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+.headerNav >li:hover{
+    font-size:26px ;
+}
+.accountname:hover .accountoptions{
+    display:block;
+}
+.accountoptions{
+    display: none;
+    position: absolute;
+    background-color: rgb(37, 180, 168);
+    padding: 5px;
+    margin-top: 10px;
+    font-size: 20px;
+    z-index: 10;
+}
+.accountoptions li:hover{
+    background-color: rgb(0, 141, 146);
+}
+
+.headerNav sup{
+    padding: 3px;
+    color: #81ecec;
+}
+
+
+@media (max-width:1200px) and (min-width:769px) {
+    .heading{
+        margin-left:30px ;
+        font-size: 13px;
+    }
+    .searchdiv{
+        width: 400px;
+    }
+    .searchdiv >input{
+        padding: 2px 10px;
+    }
+    .searchdiv >button{
+            padding: 2px 10px;
+    }
+}
+
+
+
+@media (max-width:768px)
+{
+    .header{
+        flex-wrap: wrap;
+        font-size: 7px;
+    }
+    .header>i{
+        display: block;
+        color: #fff;
+        position: absolute;
+        font-size: 20px;
+        top: 16px;
+    }
+    .heading{
+        margin-left: 28px;
+        width:unset;
+        margin-bottom: 15px;
+    }
+    .searchdiv{
+        width: 100%;
+    }
+    .searchdiv >input{
+        font-size: 15px;
+        padding: 5px 10px ;
+    }
+    .searchdiv >button{
+        font-size: 18px;
+    }
+    .headerNav{
+        position: absolute;
+        font-size: 15px;
+        top: 10px;
+        right: 0px;
+        width: 150px;
+        /* justify-content: center; */
+    }
+    .headerNav li{
+        padding: 5px;
+    }
+    .headerNav >li:hover{
+        padding: 5px;
+        font-size: 15px;
+    }
+    .accountoptions >li{
+        font-size: 10px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

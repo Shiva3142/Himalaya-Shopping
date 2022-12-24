@@ -1,0 +1,352 @@
+.checkoutProducts {
+    width: 80%;
+    margin: 10px auto;
+    padding: 5px;
+    background-color: aliceblue;
+}
+
+.checkoutProductContainer {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    margin: 5px;
+    padding: 10px 0px;
+}
+
+.checkoutProductsContainer>h1 {
+    font-size: 35px;
+}
+
+.checkoutHeadings {
+    background-color: rgba(119, 119, 119, 0.336);
+    width: 80%;
+    margin: 18px auto;
+}
+
+.checkoutproductimage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkoutProductContainer img {
+    width: 120px;
+}
+
+.checkoutproductdetails div {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.checkoutaddress {
+    width: 80%;
+    margin: 10px auto;
+    padding: 5px;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+}
+
+.checkounteditaddress {
+    display: flex;
+    margin: 20px;
+}
+
+.checkounteditpincode {
+    display: flex;
+    margin: 20px;
+}
+
+.addresssheadings {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.checkounteditaddress textarea {
+    width: 600px;
+    height: 100px;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0px 0px 0px 25px;
+}
+
+.checkounteditpincode input {
+    font-size: 20px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 0px 0px 0px 25px;
+}
+
+.deliveryOptions {
+    width: 80%;
+    margin: auto;
+    background-color: aliceblue;
+    padding: 10px;
+}
+
+.paymentoption {
+    display: flex;
+}
+
+.cash,
+.online {
+    width: 100%;
+}
+
+.cash label {
+    border: 1px solid black;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: floralwhite;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.online label {
+    border: 1px solid black;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: floralwhite;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.paymentoption input {
+    display: none;
+}
+
+.cash label:hover,
+.online label:hover {
+    background-color: aquamarine;
+}
+
+.paymentoption label {
+    font-size: 30px;
+}
+
+#cash:checked~#cashondelivery {
+    background-color: aqua;
+}
+
+#online:checked~#onlinepayment {
+    background-color: aqua;
+}
+
+.placeOrder {
+    width: 80%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.placeOrder button {
+    font-size: 30px;
+    background-color: coral;
+    border: 1px solid black;
+    padding: 5px 40px;
+    border-radius: 20px;
+    transition: padding 0.5s;
+    box-shadow: 5px 5px 5px gray;
+}
+
+.placeOrder button:hover {
+    padding: 5px 60px;
+    background-color: chocolate;
+}
+
+
+.checkoutsuccess {
+    width: 100%;
+    height: 70vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.onlinepaymentnotfound{
+    z-index: 20;
+    height: 80%;
+    width: 80%;
+    position: fixed;
+    top: 10%;
+    left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(45deg,#4834d4,#eb4d4b,#1dd1a1,#c56cf0);
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.63);
+}
+.onlinepaymentnotfound img{
+    max-height: 50%;
+    max-width: 80%;
+    margin: 20px;
+    box-shadow: 10px 10px 10px #130f4065;
+}
+.backfromonlinepayment{
+    font-size: 30px;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
+.backfromonlinepayment i{
+    text-shadow: 5px 5px 5px #130f4065;
+}
+.onlinepaymentnotfound h1{
+    text-shadow: 5px 5px 5px #130f4065;
+    margin: 20px;
+}
+.onlinepaymentnotfound h1 i{
+    color: dodgerblue;
+    font-size: 150%;
+}
+.blurbackground{
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    height: 100vh;
+    width: 100vw;
+    background-color: aqua;
+    opacity: 0.5;
+}
+@media(max-width:768px) {
+    .checkoutProducts {
+        width: 95%;
+    }
+
+    .checkoutProductsContainer>h1 {
+        font-size: 25px;
+    }
+
+    .checkoutHeadings {
+        width: 95%;
+    }
+
+    .checkoutProductContainer img {
+        width: 60px;
+    }
+
+    .checkoutproductdetails h1 {
+        font-size: 14px;
+    }
+
+    .checkoutproductdetails div {
+        font-size: 10px;
+        font-weight: 500;
+    }
+
+    .checkoutaddress {
+        width: 95%;
+    }
+
+    .checkounteditaddress {
+        margin: 10px;
+    }
+
+    .checkounteditpincode {
+        margin: 10px;
+    }
+
+    .checkounteditaddress textarea {
+        width: 180px;
+        height: 50px;
+        font-size: 12px;
+        padding: 5px;
+        margin: 0px 0px 0px 10px;
+    }
+
+    .checkounteditpincode input {
+        font-size: 12px;
+        padding: 5px;
+        border-radius: 10px;
+        margin: 0px 0px 0px 10px;
+    }
+
+    .checkoutaddress h2 {
+        font-size: 15px;
+    }
+
+    .checkoutaddress p,
+    .deliveryOptions p {
+        font-size: 10px;
+    }
+
+    .deliveryOptions {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .paymentoption {
+        display: flex;
+    }
+
+    .cash,
+    .online {
+        width: 100%;
+    }
+
+    .cash label {
+        padding: 15px;
+    }
+
+    .online label {
+        padding: 15px;
+    }
+
+    .paymentoption label {
+        font-size: 15px;
+    }
+
+
+    #cash:checked~#cashondelivery {
+        background-color: aqua;
+    }
+
+    #online:checked~#onlinepayment {
+        background-color: aqua;
+    }
+
+    .placeOrder {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .placeOrder button {
+        font-size: 20px;
+        padding: 5px 40px;
+    }
+
+    .placeOrder button:hover {
+        padding: 5px 60px;
+    }
+    .checkoutsuccess h1{
+        font-size: 20px;
+    }
+    .onlinepaymentnotfound{
+        width: 90%;
+        left: 5%;
+        height: 60vh;
+        top: 20%;
+    }
+    .onlinepaymentnotfound h1{
+        font-size: 20px;
+        margin: 20px;
+    }
+}
+@media (max-width:580px) {
+    .onlinepaymentnotfound h1{
+        font-size: 10px;
+        margin: 20px;
+    }
+}

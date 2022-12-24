@@ -1,0 +1,153 @@
+.registerformContainer {
+    display: flex;
+    margin: 50px 0px;
+    min-height: 70vh;
+}
+
+.registerform {
+    display: flex;
+    width: 900px;
+    height: 600px;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px gray;
+    overflow: hidden;
+}
+
+.registerimgContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.registerimgContainer img {
+    width: 350px;
+    height: 100%;
+}
+
+.registerform form {
+    background-color: #81ecec;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.registerform>form>input {
+    width: 350px;
+    padding: 10px 10px;
+    font-size: 20px;
+    border: none;
+    background-color: transparent;
+    margin: 20px 0px;
+    border-bottom: 2px solid black;
+}
+
+.registerform form button {
+    width: 150px;
+    margin: 10px 0px;
+    font-size: 30px;
+    padding: 5px 10px;
+    border: 1px solid #0984e3;
+    border-radius: 20px;
+    background-color: aqua;
+}
+
+.registerform form p span {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.otpForm {
+    margin: auto;
+    width: 700px;
+    height: 500px;
+    border-radius: 20px;
+    background-color: #81ecec;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.otpForm form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.otpForm form input {
+    width: 300px;
+    padding: 10px 20px;
+    margin: 30px 20px;
+    font-size: 20px;
+    box-shadow: 0px 0px 5px 5px gray;
+}
+
+.otpForm form button {
+    font-size: 30px;
+    margin: 50px;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+@media(max-width:768px) {
+    .registerform {
+        width: 300px;
+        height: 300px;
+        border-radius: 10px;
+    }
+    .registerformContainer{
+        display: block;
+        min-height: 60vh;
+    }
+    .registerimgContainer img {
+        display: none;
+        width: 120px;
+    }
+
+    .registerform>form>input {
+        width: 190px;
+        padding: 5px 5px;
+        font-size: 10px;
+        margin: 12px 0px;
+        border-bottom: 1px solid black;
+    }
+
+    .registerform form button {
+        width: 70px;
+        margin: 10px 0px;
+        font-size: 12px;
+        padding: 3px 10px;
+        border-radius: 15px;
+    }
+
+    .registerform form p {
+        font-size: 10px;
+    }
+
+    .otpForm {
+        width: auto;
+        max-width: 340px;
+        height: 250px;
+    }
+
+    .otpForm form input {
+        width: 200px;
+        padding: 10px 20px;
+        margin: 10px 20px;
+    }
+
+    .otpForm form button {
+        font-size: 25px;
+        margin: 30px;
+    }
+    .otpForm form p{
+        font-size: 10px;
+        margin-top: 10px;
+    }
+}

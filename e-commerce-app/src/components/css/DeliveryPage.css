@@ -1,0 +1,194 @@
+.loginpagesection{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    height: 100vh;
+    background: url('https://source.unsplash.com/1600x900/?nature,tree') no-repeat fixed;
+    background-size: cover;
+}
+.loginpagesectionform{
+    width: 700px;
+    height: 500px;
+    background:  linear-gradient(45deg,rgba(0, 255, 255, 0.247),#fd79a78a ),url('https://mk0malcaredecgig0d6a.kinstacdn.com/wp-content/uploads/2018/07/HTTP-authentication-.jpg') no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.loginformdetailscontainer{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.deliverypageheader nav{
+    display: flex;
+}
+.loginformdetailscontainer input{
+    font-size: 20px;
+    padding: 5px 10px;
+    width: 400px;
+    margin:30px 10px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #000;
+}
+.loginformdetailscontainer h1{
+    margin-bottom: 30px;
+}
+.loginformdetailscontainer button{
+    font-size: 30px;
+    padding: 10px 60px;
+    border: none;
+    background-color: aqua;
+    box-shadow:5px 5px 5px black;
+}
+
+.deliveryproductcontainer{
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid royalblue;
+}
+.comfirmdeliverybutton{
+    padding: 10px 50px;
+    font-size: 25px;
+}
+.finaldeliveryotpcontainer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 255, 255, 0.208);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.otpcontainerform{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background:linear-gradient(45deg,pink,#3498db);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.otpcontainerform input{
+    width: 200px;
+    margin: 30px;
+    padding: 10px;
+}
+
+.otpcontainerform button{
+    padding: 10px 50px;
+    border: none;
+    font-size: 20px;
+    margin-top: 20px;
+    background-color: aquamarine;
+    box-shadow: 5px 5px 5px gray;
+}
+.otpcontainerform i{
+    position: absolute;
+    top: 10px ;
+    right: 10px;
+    font-size: 30px;
+}
+.deliverypageheader i{
+    display: none;
+}
+.deliverryassignpagadata h1{
+    padding: 30px;
+    margin: 20px;
+    border: 1px solid royalblue;
+}
+@media (max-width:768px) {
+    .deliverypageheader{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px 5px;
+    }
+    .deliverypageheader i{
+        display: inline-block;
+        color: white;
+        margin-right: 20px;
+    }
+    .deliverypageheader h1{
+        font-size: 15px;
+        padding: 10px;
+    }
+    .deliverypageheader nav{
+        position: fixed;
+        background-color: #34495e;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+    }
+    .deliverypageheader nav a{
+        margin: 30px;
+    }
+    .deliverypageheader nav a:last-child{
+        position: absolute;
+        top: 0;
+        margin-bottom:50px ;
+        color: antiquewhite;
+    }
+    .deliverryassignpagadata{
+        font-size: 10px;
+    }
+    .deliveryproductcontainer{
+        width: auto;
+    }
+    .deliverypageheader +h1{
+        font-size: 20px;
+        margin: 10px;
+    }
+    .deliverypageheader nav i{
+        position:absolute;
+        right: 10px;
+        font-size: 30px ;
+        top: 10px;
+    }
+    .comfirmdetails{
+        font-size: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    .comfirmdetails button{
+        margin: 20px 10px;
+        font-size: 15px;
+    }
+    .finaldeliverycontainer h1{
+        font-size: 20px;
+        margin: 10px;
+    }
+    .otpcontainerform{
+        width: 320px;
+        font-size: 12px;
+    }
+    .loginpagesectionform{
+        max-width:320px ;
+    }
+    .loginpagesectionform input{
+        width: 250px;
+        font-size: 15px;
+    }
+    .loginformdetailscontainer h1{
+        font-size: 20px;
+    }
+    .loginformdetailscontainer button{
+        font-size: 20px;
+        padding: 5px 50px;
+        border-radius: 5px;
+    }
+}

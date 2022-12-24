@@ -1,0 +1,28 @@
+.branchassignedcontainer{
+    /* box-sizing: border-box; */
+    border: 1px solid gray;
+    min-height: 100px;
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.branchhomeproduct{
+    /* box-sizing: border-box; */
+    background-color: #fff;
+    width: inherit;
+    margin: 10px auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.branchproductcontainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

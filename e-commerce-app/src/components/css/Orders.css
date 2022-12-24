@@ -1,0 +1,243 @@
+.OrdersContainer {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(119, 119, 119, 0.493);
+    background-color: white;
+    margin: 30px;
+    height: 100%;
+    cursor: pointer;
+}
+
+.notorderedyet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 50px;
+}
+
+.fullOrderdetails {
+    width: 775px;
+    background-color: white;
+    padding: 20px;
+    margin: 20px 20px 50px 20px;
+}
+
+.fullOrderdetails h3 {
+    background-color: wheat;
+    padding: 10px;
+    box-sizing: border-box;
+
+}
+
+.backfromFull_Data_of_orders {
+    position: relative;
+    top: 0px;
+    right: 0px;
+    font-size: 20px;
+}
+
+.fullOrderdetails .orderimage {
+    margin: auto;
+    width: fit-content;
+}
+
+.fullOrderdetails .orderdetails a {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.trackingcontent {
+    position: relative;
+    min-height: 200px;
+    width: 90%;
+    margin: 20px auto;
+}
+
+.ordertrackingdetails {
+    position: inherit;
+}
+
+.trackingcontent::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 100%;
+    left: -10px;
+    background-color: aqua;
+}
+
+.trackingcontent::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: -17px;
+    bottom: 0px;
+    transform: rotate(135deg);
+    border: aqua solid;
+    border-width: 5px 5px 0px 0px;
+}
+
+.orderedorder {
+    font-weight: bold;
+    padding: 10px;
+}
+
+.lighttext {
+    color: gray;
+    font-weight: 100;
+    margin: 5px 10px;
+}
+
+.ordered,
+.packing,
+.shipping,
+.nearesthub,
+.outofdelivery,
+.delivered {
+    display: flex;
+    margin: 5px 10px 40px 10px;
+}
+.nearesthub{
+    flex-direction: column;
+}
+.box1 {
+    width: 110px;
+}
+
+.orderfeedbackdetails {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.starRaing {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 10px 0;
+}
+
+.starRaing input {
+    display: none;
+}
+
+.starRaing label {
+    color: rgb(192, 189, 189);
+    font-size: 40px;
+    transition: all 0.2s;
+}
+
+.starRaing label i {
+    margin: 5px;
+}
+
+.starRaing>input:checked~label {
+    color: aqua;
+}
+
+.starRaing label:hover,
+.starRaing label:hover~label {
+    color: aqua;
+}
+
+.fedbacktext {
+    margin: 30px 0;
+}
+
+.fedbacktext textarea {
+    width: 500px;
+    resize: none;
+    height: 150px;
+    padding: 10px;
+    border-radius: 15px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.feedbackaknowledge {
+    font-size: 20px;
+    margin: 20px;
+    text-align: center;
+    padding: 20px 40px;
+    background-color: rgba(123, 255, 255, 0.7);
+    border: 1px solid rgba(0, 0, 0, 0.363);
+    border-radius: 10px;
+}
+
+.feedbackbtn button {
+    padding: 10px 50px;
+    font-size: 25px;
+    border-radius: 15px;
+    background-color: aquamarine;
+    transition: all 0.3s;
+}
+
+.feedbackbtn button:hover {
+    background-color: cyan;
+}
+
+.givenstarRating i {
+    font-size: 30px;
+    margin: 10px;
+    cursor: text;
+}
+
+.feedbacksuccessmsg {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 33px 10px;
+}
+
+@media(max-width:768px) {
+    .OrdersContainer {
+        margin: 30px 5px;
+    }
+
+    .notorderedyet {
+        font-size: 20px;
+    }
+
+    .fullOrderdetails {
+        margin: 20px 5px 50px 5px;
+    }
+
+    .lighttext {
+        font-size: 12px;
+    }
+
+    .box1 {
+        font-size: 12px;
+    }
+
+    .fullOrderdetails h3 {
+        width: auto;
+        font-size: 15px;
+        margin: 10px 0px;
+        padding: 3px 5px;
+    }
+
+    .fullOrderdetails .orderdetails {
+        font-size: 12px;
+    }
+
+    .feedbackaknowledge {
+        padding: 5px 15px;
+        font-size: 12px;
+    }
+
+    .fedbacktext textarea {
+        width: 250px;
+        font-size: 12px;
+        height: 100px;
+    }
+    .feedbackbtn button {
+        padding: 10px 30px;
+        font-size: 20px;
+    }
+    .feedbacksuccessmsg{
+        font-size: 15px;
+    }
+}

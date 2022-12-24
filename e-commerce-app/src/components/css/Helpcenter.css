@@ -1,0 +1,93 @@
+.helpcenterContainer {
+    min-height: 70vh;
+    box-sizing: border-box;
+}
+.helpcenterContainer h2{
+    padding: 10px ;
+    background-color: aquamarine;
+}
+.suggetionform {
+    background-color: #fff;
+    max-width: fit-content;
+    padding:20px 40px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.suggetionform form {
+    width: fit-content;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.suggetionform form input {
+    margin: 20px;
+    padding: 10px;
+    font-size: 20px;
+    width: 300px;
+}
+.suggetionform form input:focus,.suggetionform form textarea:focus{
+    box-shadow: 0px 0px  10px aqua;
+}
+.suggetionform form textarea {
+    padding: 15px;
+    height: 100px;
+    margin: 30px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+.suggetionform form button {
+    font-size: 20px;
+    padding: 10px 50px;
+    border-radius: 10px;
+    background-color: aqua;
+}
+.suggetionform form div{
+    font-size: 15px;
+    width: 315px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.suggetionform form div select{
+    padding: 10px;
+}
+
+.helpcentersuccess{
+    height: 70vh;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+}
+.helpcentersuccess img{
+    max-width: 90%;
+}
+@media (max-width:768px) {
+    .suggetionform form input {
+        width: 280px;
+        font-size: 15px;
+    }
+
+    .suggetionform form textarea {
+        width: 280px;
+    }
+
+    .suggetionform form div{
+        width: 280px;
+        font-size: 12px;
+    }
+
+
+    .suggetionform form div select{
+        padding: 5px;
+    }
+}

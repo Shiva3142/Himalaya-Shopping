@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
+
+.Errorpage {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #fff;
+    padding: 30px;
+}
+
+.Errorpage>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Errorpage div div {
+    font-size: 150px;
+    color: cyan;
+}
+
+
+.Errorpage img {
+    max-width: 96vw;
+}
+
+.Errorpage section {
+    font-size: 40px;
+    margin: 10px;
+    color: green;
+}
+.Errorpage span{
+    color: red;
+}
+.Errorpage a {
+    background-color: #fff;
+
+    color: blue;
+    text-decoration: underline;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 20px;
+    font-size: 30px;
+    margin: 30px;
+    transition: padding 0.5s;
+}
+
+.Errorpage a:hover {
+    border: 1px solid royalblue;
+    padding: 10px 60px;
+    color:rgb(255, 0, 212)
+}
+
+
+@media (max-width:768px) {
+    .Errorpage div div {
+        font-size: 60px;
+    }
+    .Errorpage section {
+        font-size: 15px;
+    }
+    .Errorpage a{
+        font-size: 20px;
+    }
+    .Errorpage a:hover{
+        padding: 10px 40px;
+    }
+}

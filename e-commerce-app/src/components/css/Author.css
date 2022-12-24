@@ -1,0 +1,20 @@
+.author {
+    position: fixed;
+    bottom: 0;
+    right: 0px;
+    background-color: aqua;
+    padding: 5px;
+    font-size: 18px;
+    z-index: 100000;
+}
+
+@media (max-width:768px) {
+    .author {
+        position: fixed;
+        bottom: 0;
+        right: 0px;
+        background-color: aqua;
+        padding: 5px;
+        font-size: 12px;
+    }
+}

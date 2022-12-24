@@ -1,0 +1,71 @@
+.cartContainer{
+    width: 95%;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.477);
+    
+}
+.CartProducts{
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid black;
+    padding: 10px;
+}
+.cartSubtotal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+.cartSubtotal p,h3,.checkOutbtn{
+    margin: 5px 0;
+    width: 100%;
+}
+.cartSubtotal span{
+    color: red;
+    font-size: 25px;
+}
+.checkOutbtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.checkOutbtn button{
+    width: 100%;
+    font-size: 25px;
+    padding: 5px 60px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 10px;
+    background-color: tomato;
+}
+.checkOutbtn button:hover{
+    box-shadow: 0 0 5px 2px gray;
+    background-color: chocolate;
+}
+
+.cartDataNotFound{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 87.5vh;
+    font-size: 30px;
+}
+
+@media (max-width:768px)
+{
+    .cartContainer{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .cartSubtotal{
+        border-bottom: 1px solid black;
+    }
+    .cartDataNotFound{
+        font-size: 10px;
+    }
+}

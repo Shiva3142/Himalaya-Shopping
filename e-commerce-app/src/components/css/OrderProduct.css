@@ -1,0 +1,41 @@
+.orderProductContainer{
+    display: flex;
+    width: 850px;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+.orderimage{
+    padding: 3px;
+}
+.orderimage img{
+    width: 200px;
+}
+.orderdetails{
+    margin: 5px 20px;
+    display: flex;
+    flex-direction: column;
+}
+.orderdetails p a{
+    color: black;
+}
+.orderdetails p{
+    padding: 10px;
+}
+
+@media(max-width:768px)
+{
+    .orderProductContainer{
+        width: 300px;
+        font-size: 10px;
+    }
+    .orderimage img{
+        width: 100px;
+    }
+    .orderdetails{
+        margin: 0;
+        margin-left: 5px;
+    }
+    .orderdetails p{
+        padding: 3px;
+    }
+}

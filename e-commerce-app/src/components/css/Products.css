@@ -1,0 +1,41 @@
+.ProductsContainer {
+    z-index: 1;
+    width: 100%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.productscontainer{
+    min-height: 50vh;
+}
+@media (max-width:768px) {
+    .ProductsContainer {
+        flex-direction: column;
+    }
+
+    .ProductsDataNotFound span{
+        font-size: 15px;
+    }
+    .mainProductsDataNotFound span{
+        font-size: 15px;
+    }
+}
+
+.ProductsDataNotFound {
+    height: 80vh;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mainProductsDataNotFound {
+    height: 25vh;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

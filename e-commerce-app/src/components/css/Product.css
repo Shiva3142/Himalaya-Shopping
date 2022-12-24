@@ -1,0 +1,236 @@
+.productContainer{
+    border: 1px solid rgba(0, 0, 0, 0.292);
+    background-color: #fff;
+    width: 90%;
+    margin:30px auto;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    min-height: 80vh;
+}
+.productImageContainer{
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+}
+.productImageoptions{
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+}
+.productimageOption {
+    border: 1px solid rgba(0, 0, 0, 0.438);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    margin: 20px;
+    cursor: pointer;
+}
+.productimageOption:hover{
+    box-shadow: 0px 0px 5px 1px red;
+}
+.productimageOption img{
+    width: 50px;
+}
+
+.productMainImage{
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    margin: 10px;
+}
+.productMainImage img{
+    width: 420px;
+    max-height: 700px;
+}
+
+
+.productInfo{
+    /* border-left: 1px solid black; */
+    height: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    scrollbar-width: none;
+}
+@media (min-width:768px) {
+    .productInfo{
+        height: 85vh;
+        overflow-y: scroll;
+    }
+}
+.productInfo::-webkit-scrollbar{
+    display: none;
+}
+
+.pdtinfo{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.pdtinfo h2{
+    font-weight:normal;
+    margin: 10px 0px;
+}
+.pdtinfo p{
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px 0px;
+}
+.pdtinfo sup{
+    font-size: 20px;
+}
+.pdtinfo span{
+    color: red;
+}
+.cartbtn{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cartbtn button{
+    padding: 10px 100px;
+    font-size: 25px;
+    background-color: aqua;
+    border: 1px solid rgba(0, 0, 0, 0.577);
+    border-radius: 10px;
+}
+
+.cartbtn button:hover{
+    background-color: aquamarine;
+    box-shadow: 0px 0px 5px 2px gray;
+}
+
+.pdtdescription{
+    margin: 10px 0px;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.pdtSpecification{
+    padding: 10px;
+}
+
+.specificationlist{
+    margin: 10px 0px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.specificationlist li{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+.specificationlist li:not(:last-child){
+    border-bottom: 1px solid rgb(114, 114, 114);
+}
+.key{
+    padding: 10px;
+    width: 50%;
+    background-color: rgb(228, 228, 228);
+}
+.value{
+    padding: 10px;
+    width: 50%;
+    background-color: rgb(199, 199, 199);
+}
+
+.ProductRating{
+    padding: 10px;
+}
+.pdtreviews{
+    padding: 10px;
+}
+
+.ratingcontainer{
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    font-size: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.reviewusername{
+    display: flex;
+    align-items: center;
+}
+.reviewusername img{
+    width: 30px;
+    margin: 10px 20px;
+}
+.userreviewdesc{
+    padding: 10px;
+}
+
+.noreviews{
+    text-align: center;
+    padding: 30px 0px;
+}
+
+
+@media(max-width:768px)
+{
+    .productContainer{
+        width: 99%;
+        display: flex;
+        flex-direction: column;
+        margin: 10px auto;
+    }
+    .productImageoptions{
+        margin: 5px;
+    }
+    .productimageOption{
+        padding: 5px;
+        margin: 10px;
+    }
+    .productimageOption img{
+        width: 30px;
+    }
+    .productMainImage{
+        min-height: 300px;
+    }
+    .productMainImage img{
+        width: 250px;
+    }
+    .productInfo{
+        padding: 0px 20px;
+        overflow-y: auto;
+    }
+    .pdtinfo h2{
+        font-size: 20px;
+    }
+    .pdtinfo p{
+        font-size: 25px;
+        margin: 0 0 20px 0px;
+    }
+    .cartbtn button{
+        padding: 10px 50px;
+    }
+    .pdtdescription{
+        font-size: 15px;
+        text-align: justify;
+    }
+    .ratingcontainer{
+        font-size: 25px;
+    }
+    .userreviewdesc{
+        font-size: 12px;
+        padding: 0px 10px;
+    }
+}
+
+
+@media(max-width:900px){
+    .productimageOption img{
+        width: 40px;
+    }
+    .productMainImage img{
+        width: 300px;
+    }
+}

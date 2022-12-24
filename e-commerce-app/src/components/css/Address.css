@@ -1,0 +1,113 @@
+.addressContainer{
+    width: 700px;
+    height: 300px;
+    border: 1px solid rgba(128, 128, 128, 0.301);
+    border-radius: 10px;
+    background-color: #c7ecee;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 25px;
+    margin: 30px 0px;
+    box-shadow: 10px 10px 10px gray;
+}
+.addressdetail{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+
+.updateaddresslink{
+    width: 400px;
+    font-size: 20px;
+}
+
+.updateaddresslink span{
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.addressdata{
+    width: 500px;
+    padding: 10px 20px ;
+    border: 1px solid gray;
+    background-color: #7ed6df;
+}
+.updateaddressdetail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.updateaddressdetail form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.updateaddressdetail textarea{
+    font-size: 20px;
+    width: 400px;
+    height: 100px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px 10px;
+}
+.updateaddressdetail input{
+    width: 400px;
+    font-size: 18px;
+    padding: 10px;
+    margin: 10px 10px;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+
+.updateaddressdetail button:first-child{
+    padding: 5px 30px;
+    background-color: #79ffde;
+    border: none;
+    border-radius: 15px;
+    box-shadow:0px 0px 5px 2px gray;
+    font-size: 25px;
+    margin: 10px 10px;
+}
+.updateaddressdetail button:last-child{
+    padding: 5px 30px;
+    background-color: #00e74d;
+    border: none;
+    border-radius: 15px;
+    box-shadow:0px 0px 5px 2px gray;
+    font-size: 25px;
+    margin: 10px 10px;
+}
+
+
+
+@media (max-width:768px){
+    .addressContainer{
+        width: 300px;
+        font-size: 12px;
+    }
+    .updateaddressdetail textarea{
+        width: 250px;
+        font-size: 15px;
+        height: 80px;
+    }
+    .updateaddressdetail input{
+        width: 250px;
+        font-size: 15px;
+    }
+    .addressdetail{
+        margin: 10px 0px;
+    }
+    .addressdata{
+        width: 200px;
+    }
+    .updateaddresslink{
+        font-size: 15px;
+        width: 300px;
+    }
+    .updateaddressdetail button{
+        font-size: 15px !important;
+    }
+}

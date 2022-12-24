@@ -1,0 +1,55 @@
+.footer{
+    background-color: black;
+    min-height: 50px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.imformationforms{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    font-size: 20px;
+    padding: 10px 0;
+    background-color: #2f3542;
+}
+.imformationforms div{
+    display: flex;
+    flex-direction: column;
+}
+.footername{
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    margin: 10px 0;
+}
+.contactdetails{
+    color: white;
+}
+.footer span{
+    color: rgb(150, 150, 150);
+    margin: 10px 0;
+}
+.footer a{
+    margin: 5px 0;
+}
+.contactdetails >div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.contactdetails>div a{
+    margin-left: 5px;
+    text-decoration:underline;
+}
+@media(max-width:768px)
+{
+    .imformationforms{
+        font-size: 10px;
+    }
+    .footername{
+        font-size: 15px;
+    }
+}

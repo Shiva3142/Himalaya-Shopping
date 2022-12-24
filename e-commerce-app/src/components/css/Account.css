@@ -1,0 +1,42 @@
+.accountOptions{
+display: flex;
+justify-content: center;
+margin-top: 30px;
+}
+.acoptions{
+    border-radius: 10px;
+    width: 900px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    background-color: aquamarine;
+    overflow: hidden;
+}
+.acoption{
+    padding: 20px 50px;
+    font-size: 25px;
+    cursor: pointer;
+}
+.acoption:hover{
+    background-color: aqua;
+}
+
+
+.accountDetails{
+    display: flex;
+    justify-content: center;
+    min-height: 70vh;
+}
+
+
+@media(max-width:768px)
+{
+    .acoptions{
+        width: 320px;
+        border-radius: 2px;
+    }
+    .acoption{
+        padding: 10px 20px;
+        font-size: 12px;
+    }
+}

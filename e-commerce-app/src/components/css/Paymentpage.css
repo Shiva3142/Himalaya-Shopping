@@ -1,0 +1,261 @@
+.paymentpagecontainer {
+    position: relative;
+    background: linear-gradient(135deg,#ecf0f1, aqua,#34495e);
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0;
+}
+
+.paymentpagecontainer i {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 25px;
+}
+
+.paymentpagecontainer h1 {
+    text-align: center;
+    background: aqua;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.paymentLayout {
+    background: #ffffff;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.paymentamountinfo {
+    font-size: 30px;
+}
+
+.paymentOptionscontainer {
+    width: 90%;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.paymentOptionscontainer h3 {
+    color: aquamarine;
+    text-align: center;
+}
+
+
+.paymentOptions {
+    width: 550px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.thepaymentoptions {
+    width: 150px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.thepaymentoptions img {
+    width: 80px;
+}
+
+.paymentdetailoptions {
+    display: flex;
+    flex-direction: column;
+}
+
+.paymentdetailoptions #name {
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 18px;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid grey;
+}
+
+
+
+.PayBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.PayBtn span{
+    margin: 0 20px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.PayBtn span:hover{
+    color: blue;
+}
+
+.PayBtn button{
+    padding: 10px 40px;
+    background-color: aqua;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.397);
+    font-size: 20px;
+    transition: all 1s ;
+}
+
+.PayBtn button:hover{
+    background-color: aquamarine;
+    padding:10px 50px ;
+}
+
+.netbankingoptions{
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.netbankingoptions input{
+    display: none;
+    cursor: pointer;
+}
+
+.bankname label{
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+}
+.bankname label:hover{
+    border: 1px solid aqua;
+}
+#bank1:checked~#bank1label{
+    background-color: aquamarine;
+}
+#bank2:checked~#bank2label{
+    background-color: aquamarine;
+}
+#bank3:checked~#bank3label{
+    background-color: aquamarine;
+}
+#bank4:checked~#bank4label{
+    background-color: aquamarine;
+}
+#bank5:checked~#bank5label{
+    background-color: aquamarine;
+}
+#bank6:checked~#bank6label{
+    background-color: aquamarine;
+}
+#bank7:checked~#bank7label{
+    background-color: aquamarine;
+}
+
+.upipaymentcontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.upipaymentcontainer input{
+    padding: 5px;
+    font-size: 20px;
+    margin: 10px;
+    border: none;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+.upipaymentcontainer span{
+    margin: 10px;
+}
+.upipaymentcontainer label{
+    margin: 10px;
+}
+
+@media (max-width:768px) {
+    .paymentpagecontainer h1 {
+        font-size: 13px;
+    }
+
+    .paymentpagecontainer i {
+        font-size: 20px;
+    }
+
+    .paymentamountinfo {
+        font-size: 15px;
+    }
+
+
+    .paymentdetailoptions #name {
+        font-size: 14px;
+    }
+
+    .netbankingoptions label {
+        font-size: 12px;
+    }
+
+    .paymentamountinfo {
+        font-size: 18px;
+    }
+
+    .paymentOptionscontainer {
+        margin: 10px;
+        padding: 5px;
+        border: 1px solid gray;
+    }
+
+    .paymentOptionscontainer h3 {
+        color: aquamarine;
+        text-align: center;
+    }
+
+
+    .paymentOptions {
+        width: 280px;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 10px;
+    }
+
+    .thepaymentoptions {
+        width: 60px;
+        height: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        border: 1px solid black;
+        padding: 10px;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 6px;
+    }
+
+    .thepaymentoptions img {
+        width: 40px;
+        margin-bottom: 10px;
+    }
+
+
+
+
+
+
+
+}
